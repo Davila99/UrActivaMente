@@ -12,42 +12,42 @@ const AreasConocimiento = () => {
    const areas = [
       {
         id: 1,
-        title: "Educaciónfr",
+        title: "Área de Conocimiento Educación",
         image: areaEducacion,
         description: "Herramientas para formación docente y aprendizaje continuo.",
         icon: "fas fa-graduation-cap"
       },
       {
         id: 2,
-        title: "Humanidades y Artes",
+        title: "Área del Conocimiento Humanidades y Artes",
         image: areaHumanidades,
         description: "Exploración de cultura, filosofía, lenguas y expresiones artísticas.",
         icon: "fas fa-paint-brush"
       },
       {
         id: 3,
-        title: "Ciencias Económicas y Jurídicas",
+        title: "Área del Conocimiento Ciencias Económicas y Jurídicas",
         image: areaEconomicas,
         description: "Conocimientos sobre economía, derecho y desarrollo comunitario.",
         icon: "fas fa-balance-scale"
       },
       {
         id: 4,
-        title: "Ingeniería e Industria",
+        title: "Área del Conocimiento Ciencias; Ingeniería, Industria y Construcción",
         image: areaIngenieria,
         description: "Tecnologías para desarrollo industrial sostenible.",
         icon: "fas fa-cogs"
       },
       {
         id: 5,
-        title: "Agricultura",
+        title: "Área del Conocimiento Agricultura",
         image: areaAgricultura,
         description: "Técnicas agropecuarias para el desarrollo rural.",
         icon: "fas fa-tractor"
       },
       {
         id: 6,
-        title: "Salud y Servicios Sociales",
+        title: "Área del Conocimiento Salud y Servicios Sociales",
         image: areaSalud,
         description: "Promoción de la salud y bienestar comunitario.",
         icon: "fas fa-heartbeat"
