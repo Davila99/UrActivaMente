@@ -11,6 +11,7 @@ import heroImage from "../assets/fondo.jpg";
 import appScreenshot from "../assets/fondo3.jpg";
 import Navbar from "./Navbar";
 import AreasConocimiento from "./AreaConocimiento";
+import Footer from "./Footer.jsx";
 
 export default function LandingPage() {
   useEffect(() => {
@@ -225,59 +226,372 @@ export default function LandingPage() {
       </section>
 
       {/* Contact Section */}
-      <section className="contact-section" id="contact">
-        <div className="container">
-          <div className="contact-content">
-            <div className="contact-form">
-              <h2>Contacto</h2>
-              <p className="lead">
-                ¿Tienes preguntas o sugerencias? Escríbenos
-              </p>
-              <form>
-                <div className="form-group">
-                  <input type="text" placeholder="Nombre" required />
+      <section
+        className="contact-section"
+        id="contact"
+        style={{
+          background: "linear-gradient(120deg, #f6f8fa 60%, #e3eafc 100%)",
+          padding: "4rem 0 3.5rem 0",
+        }}
+      >
+        <div
+          className="container"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            minHeight: "60vh",
+          }}
+        >
+          <div
+            className="contact-card"
+            style={{
+              background: "#fff",
+              borderRadius: "28px",
+              boxShadow:
+                "0 6px 32px 0 rgba(44,62,80,0.10), 0 1.5px 6px 0 rgba(52,152,219,0.07)",
+              padding: "2.8rem 2.5rem",
+              maxWidth: "950px",
+              width: "100%",
+              display: "flex",
+              flexWrap: "wrap",
+              gap: "2.8rem",
+              justifyContent: "center",
+              border: "1.5px solid #e0e7ef",
+              position: "relative",
+              overflow: "hidden",
+            }}
+          >
+            <div
+              className="contact-form"
+              style={{
+                flex: "1 1 350px",
+                minWidth: "320px",
+                maxWidth: "440px",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                background: "rgba(245,250,255,0.85)",
+                borderRadius: "18px",
+                boxShadow: "0 2px 8px rgba(44,62,80,0.04)",
+                padding: "2.2rem 1.5rem",
+                border: "1px solid #e0e7ef",
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  marginBottom: "1.2rem",
+                }}
+              >
+                <div
+                  style={{
+                    background:
+                      "linear-gradient(135deg, #3498db 60%, #6dd5ed 100%)",
+                    borderRadius: "50%",
+                    width: "60px",
+                    height: "60px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    marginBottom: "0.7rem",
+                    boxShadow: "0 2px 8px rgba(52,152,219,0.13)",
+                  }}
+                >
+                  <i
+                    className="fas fa-paper-plane"
+                    style={{ color: "#fff", fontSize: "2rem" }}
+                  ></i>
                 </div>
-                <div className="form-group">
-                  <input type="email" placeholder="Email" required />
+                <h2
+                  style={{
+                    fontWeight: 800,
+                    color: "#2c3e50",
+                    fontSize: "1.6rem",
+                    margin: 0,
+                  }}
+                >
+                  Contacto
+                </h2>
+                <p
+                  className="lead"
+                  style={{
+                    color: "#6c757d",
+                    margin: 0,
+                    marginTop: "0.5rem",
+                    fontSize: "1.08rem",
+                  }}
+                >
+                  ¿Tienes preguntas o sugerencias? Escríbenos
+                </p>
+              </div>
+              <form autoComplete="off">
+                <div className="form-group" style={{ marginBottom: "1.1rem" }}>
+                  <input
+                    type="text"
+                    placeholder="Nombre"
+                    required
+                    style={{
+                      width: "100%",
+                      padding: "0.75rem 1.1rem",
+                      borderRadius: "10px",
+                      border: "1.5px solid #d0d7e6",
+                      fontSize: "1rem",
+                      background: "#fafdff",
+                      outline: "none",
+                      transition: "border 0.2s, box-shadow 0.2s",
+                    }}
+                    onFocus={(e) =>
+                      (e.target.style.border = "1.5px solid #3498db")
+                    }
+                    onBlur={(e) =>
+                      (e.target.style.border = "1.5px solid #d0d7e6")
+                    }
+                  />
                 </div>
-                <div className="form-group">
-                  <input type="text" placeholder="Asunto" />
+                <div className="form-group" style={{ marginBottom: "1.1rem" }}>
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    required
+                    style={{
+                      width: "100%",
+                      padding: "0.75rem 1.1rem",
+                      borderRadius: "10px",
+                      border: "1.5px solid #d0d7e6",
+                      fontSize: "1rem",
+                      background: "#fafdff",
+                      outline: "none",
+                      transition: "border 0.2s, box-shadow 0.2s",
+                    }}
+                    onFocus={(e) =>
+                      (e.target.style.border = "1.5px solid #3498db")
+                    }
+                    onBlur={(e) =>
+                      (e.target.style.border = "1.5px solid #d0d7e6")
+                    }
+                  />
                 </div>
-                <div className="form-group">
-                  <textarea rows={5} placeholder="Mensaje" required></textarea>
+                <div className="form-group" style={{ marginBottom: "1.1rem" }}>
+                  <input
+                    type="text"
+                    placeholder="Asunto"
+                    style={{
+                      width: "100%",
+                      padding: "0.75rem 1.1rem",
+                      borderRadius: "10px",
+                      border: "1.5px solid #d0d7e6",
+                      fontSize: "1rem",
+                      background: "#fafdff",
+                      outline: "none",
+                      transition: "border 0.2s, box-shadow 0.2s",
+                    }}
+                    onFocus={(e) =>
+                      (e.target.style.border = "1.5px solid #3498db")
+                    }
+                    onBlur={(e) =>
+                      (e.target.style.border = "1.5px solid #d0d7e6")
+                    }
+                  />
                 </div>
-                <button type="submit" className="btn-submit">
+                <div className="form-group" style={{ marginBottom: "1.3rem" }}>
+                  <textarea
+                    rows={5}
+                    placeholder="Mensaje"
+                    required
+                    style={{
+                      width: "100%",
+                      padding: "0.75rem 1.1rem",
+                      borderRadius: "10px",
+                      border: "1.5px solid #d0d7e6",
+                      fontSize: "1rem",
+                      background: "#fafdff",
+                      outline: "none",
+                      resize: "vertical",
+                      transition: "border 0.2s, box-shadow 0.2s",
+                    }}
+                    onFocus={(e) =>
+                      (e.target.style.border = "1.5px solid #3498db")
+                    }
+                    onBlur={(e) =>
+                      (e.target.style.border = "1.5px solid #d0d7e6")
+                    }
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  style={{
+                    width: "100%",
+                    backgroundColor: "green",
+                    color: "#fff",
+                    border: "none",
+                    borderRadius: "10px",
+                    padding: "0.9rem 0",
+                    fontWeight: 700,
+                    fontSize: "1.08rem",
+                    letterSpacing: "0.5px",
+                    boxShadow: "0 2px 8px rgba(52,152,219,0.10)",
+                    transition: "background 0.2s, box-shadow 0.2s",
+                  }}
+                >
+                  <i
+                    className="fas fa-paper-plane"
+                    style={{ marginRight: "0.7rem" }}
+                  ></i>
                   Enviar mensaje
                 </button>
               </form>
             </div>
-            <div className="contact-info">
-              <h3>Información de contacto</h3>
-              <ul>
-                <li>
-                  <i className="fas fa-map-marker-alt"></i>
+            <div
+              className="contact-info"
+              style={{
+                flex: "1 1 260px",
+                minWidth: "260px",
+                maxWidth: "340px",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                background: "#f8fafc",
+                borderRadius: "18px",
+                padding: "2.2rem 1.5rem 1.7rem 1.5rem",
+                boxShadow: "0 2px 8px rgba(44,62,80,0.07)",
+                border: "1px solid #e0e7ef",
+                alignItems: "center",
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  marginBottom: "1.1rem",
+                }}
+              >
+                <div
+                  style={{
+                    borderRadius: "50%",
+                    width: "54px",
+                    height: "54px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    marginBottom: "0.5rem",
+                    boxShadow: "0 2px 8px rgba(52,152,219,0.13)",
+                  }}
+                >
+                  <i
+                    className="fas fa-user-tie"
+                    style={{ color: "#fff", fontSize: "1.7rem" }}
+                  ></i>
+                </div>
+                <h3
+                  style={{
+                    fontWeight: 700,
+                    color: "#2c3e50",
+                    fontSize: "1.13rem",
+                    margin: 0,
+                  }}
+                >
+                  Información de contacto
+                </h3>
+              </div>
+              <ul
+                style={{
+                  listStyle: "none",
+                  padding: 0,
+                  marginBottom: "1.3rem",
+                  width: "100%",
+                }}
+              >
+                <li
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    marginBottom: "0.8rem",
+                    color: "#555",
+                    gap: "0.7rem",
+                  }}
+                >
+                  <i
+                    className="fas fa-map-marker-alt"
+                    style={{ color: "#3498db", fontSize: "1.2rem" }}
+                  ></i>
                   <span>URACCAN, Recinto Nueva Guinea, Nicaragua</span>
                 </li>
-                <li>
-                  <i className="fas fa-phone"></i>
+                <li
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    marginBottom: "0.8rem",
+                    color: "#555",
+                    gap: "0.7rem",
+                  }}
+                >
+                  <i
+                    className="fas fa-phone"
+                    style={{ color: "#3498db", fontSize: "1.2rem" }}
+                  ></i>
                   <span>+505 1234 5678</span>
                 </li>
-                <li>
-                  <i className="fas fa-envelope"></i>
+                <li
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    color: "#555",
+                    gap: "0.7rem",
+                  }}
+                >
+                  <i
+                    className="fas fa-envelope"
+                    style={{ color: "#3498db", fontSize: "1.2rem" }}
+                  ></i>
                   <span>uractivamente@uraccan.edu.ni</span>
                 </li>
               </ul>
-              <div className="social-links">
-                <a href="#">
+              <div
+                className="social-links"
+                style={{ display: "flex", gap: "1.1rem", marginTop: "0.5rem" }}
+              >
+                <a
+                  href="#"
+                  style={{
+                    color: "#3498db",
+                    fontSize: "1.25rem",
+                    transition: "color 0.2s",
+                  }}
+                >
                   <i className="fab fa-facebook-f"></i>
                 </a>
-                <a href="#">
+                <a
+                  href="#"
+                  style={{
+                    color: "#3498db",
+                    fontSize: "1.25rem",
+                    transition: "color 0.2s",
+                  }}
+                >
                   <i className="fab fa-twitter"></i>
                 </a>
-                <a href="#">
+                <a
+                  href="#"
+                  style={{
+                    color: "#3498db",
+                    fontSize: "1.25rem",
+                    transition: "color 0.2s",
+                  }}
+                >
                   <i className="fab fa-instagram"></i>
                 </a>
-                <a href="#">
+                <a
+                  href="#"
+                  style={{
+                    color: "#3498db",
+                    fontSize: "1.25rem",
+                    transition: "color 0.2s",
+                  }}
+                >
                   <i className="fab fa-linkedin-in"></i>
                 </a>
               </div>
@@ -287,85 +601,7 @@ export default function LandingPage() {
       </section>
 
       {/* Footer */}
-      <footer className="footer">
-        <div className="container">
-          <div className="footer-content">
-            <div className="footer-about">
-              <img src={logo} alt="UrActivaMente" width="180" />
-              <p>
-                Una herramienta didáctica para el aprendizaje activo que integra
-                todas las áreas del conocimiento.
-              </p>
-              <div className="footer-social">
-                <a href="#">
-                  <i className="fab fa-facebook-f"></i>
-                </a>
-                <a href="#">
-                  <i className="fab fa-twitter"></i>
-                </a>
-                <a href="#">
-                  <i className="fab fa-instagram"></i>
-                </a>
-                <a href="#">
-                  <i className="fab fa-youtube"></i>
-                </a>
-              </div>
-            </div>
-            <div className="footer-links">
-              <h4>Enlaces rápidos</h4>
-              <ul>
-                <li>
-                  <a href="#hero">Inicio</a>
-                </li>
-                <li>
-                  <a href="#areas">Áreas</a>
-                </li>
-                <li>
-                  <a href="#about">Acerca de</a>
-                </li>
-                <li>
-                  <a href="#features">Características</a>
-                </li>
-                <li>
-                  <a href="#contact">Contacto</a>
-                </li>
-              </ul>
-            </div>
-            <div className="footer-areas">
-              <h4>Áreas de conocimiento</h4>
-              <ul>
-                {areas.map((area) => (
-                  <li key={area.id}>
-                    <a href="#">{area.title}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="footer-newsletter">
-              <h4>Newsletter</h4>
-              <p>Suscríbete para recibir actualizaciones</p>
-              <form>
-                <input
-                  type="email"
-                  placeholder="Tu correo electrónico"
-                  required
-                />
-                <button type="submit">Suscribir</button>
-              </form>
-            </div>
-          </div>
-          <div className="footer-bottom">
-            <p>
-              &copy; {new Date().getFullYear()} UrActivaMente - URACCAN. Todos
-              los derechos reservados.
-            </p>
-            <div className="legal-links">
-              <a href="#">Términos y condiciones</a>
-              <a href="#">Política de privacidad</a>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
 
       {/* Scroll to Top Button */}
       <a href="#hero" className="scroll-top" id="scrollTop">
