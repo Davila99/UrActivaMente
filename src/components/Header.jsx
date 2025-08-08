@@ -15,9 +15,6 @@ import areaEconomicas from '../assets/app-screenshot.jpg';
 import areaIngenieria from '../assets/app-screenshot.jpg';
 import areaAgricultura from '../assets/app-screenshot.jpg';
 import areaSalud from '../assets/app-screenshot.jpg';
-import testimonial1 from '../assets/app-screenshot.jpg';
-import testimonial2 from '../assets/app-screenshot.jpg';
-import testimonial3 from '../assets/app-screenshot.jpg';
 import Navbar from './Navbar';
 import AreasConocimiento from './AreaConocimiento';
 
@@ -124,27 +121,6 @@ export default function LandingPage() {
     }
   ];
 
-  // Testimonios
-  const testimonials = [
-    {
-      quote: "UrActivaMente ha revolucionado mi forma de enseñar. Los recursos multidisciplinarios me permiten crear experiencias de aprendizaje más enriquecedoras.",
-      name: "Prof. María López",
-      role: "Docente de Humanidades",
-      image: testimonial1
-    },
-    {
-      quote: "Como estudiante, valoro poder acceder a contenidos de diferentes áreas que complementan mi formación profesional en ingeniería.",
-      name: "Juan Pérez",
-      role: "Estudiante de Ingeniería",
-      image: testimonial2
-    },
-    {
-      quote: "La integración de conocimientos agrícolas con aspectos económicos y sociales ha sido clave para mejorar nuestras prácticas comunitarias.",
-      name: "Ana Ruiz",
-      role: "Líder comunitaria",
-      image: testimonial3
-    }
-  ];
 
   return (
     <div className="landing-page">
@@ -195,45 +171,6 @@ export default function LandingPage() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
-      <section className="testimonials-section">
-        <div className="container">
-          <div className="section-header">
-            <h2>Lo que dicen nuestros usuarios</h2>
-            <p>Experiencias reales de la comunidad educativa</p>
-          </div>
-          <Swiper
-            modules={[Navigation, Pagination, Autoplay]}
-            spaceBetween={30}
-            slidesPerView={1}
-            navigation
-            pagination={{ clickable: true }}
-            autoplay={{ delay: 5000 }}
-            breakpoints={{
-              768: { slidesPerView: 2 },
-              992: { slidesPerView: 3 }
-            }}
-          >
-            {testimonials.map((testimonial, index) => (
-              <SwiperSlide key={index}>
-                <div className="testimonial-card">
-                  <div className="testimonial-content">
-                    <p>"{testimonial.quote}"</p>
-                  </div>
-                  <div className="testimonial-author">
-                    <img src={testimonial.image} alt={testimonial.name} />
-                    <div>
-                      <h5>{testimonial.name}</h5>
-                      <small>{testimonial.role}</small>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
         </div>
       </section>
 
