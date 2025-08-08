@@ -38,7 +38,7 @@ const Navbar = () => {
                 <div className="navbar-brand">
                     <a href="#" className="flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium">
                         <i className="fas fa-brain text-xl"></i>
-                        <span>UrActivaMente</span>
+                        <span>URACTIVAMENTE</span>
                     </a>
                 </div>
 

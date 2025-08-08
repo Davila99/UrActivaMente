@@ -97,7 +97,7 @@ export default function LandingPage() {
                 <div className="container">
                     <div className="hero-content">
                         <div className="hero-text">
-                            <h1>UrActivaMente</h1>
+                            <h1>URACTIVAMENTE</h1>
                             <h2>La plataforma educativa integral de URACCAN</h2>
                             <p>
                                 Una herramienta didáctica para el aprendizaje activo que integra
