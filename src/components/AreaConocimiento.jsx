@@ -1,12 +1,16 @@
 import React from 'react';
 import { FaGraduationCap, FaPaintBrush, FaBalanceScale, FaCogs, FaTractor, FaHeartbeat } from 'react-icons/fa';
-
-import areaEducacion from '../assets/app-screenshot.jpg';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import areaEducacion from '../assets/fondo6.jpg';
 import areaHumanidades from '../assets/SaludServicioSocial.jpeg';
 import areaEconomicas from '../assets/CienciasEconomicas.jpeg';
 import areaIngenieria from '../assets/fondo4.jpg';
 import areaAgricultura from '../assets/Agricultura.jpeg';
-import areaSalud from '../assets/app-screenshot.jpg';
+import areaSalud from '../assets/fondo5.jpg';
 const AreasConocimiento = () => {
   // Datos de las áreas de conocimiento
    const areas = [
