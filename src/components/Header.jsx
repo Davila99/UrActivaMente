@@ -9,12 +9,6 @@ import 'swiper/css/pagination';
 import logo from '../assets/app-screenshot.jpg';
 import heroImage from '../assets/fondo.jpg';
 import appScreenshot from '../assets/fondo3.jpg';
-import areaEducacion from '../assets/app-screenshot.jpg';
-import areaHumanidades from '../assets/app-screenshot.jpg';
-import areaEconomicas from '../assets/app-screenshot.jpg';
-import areaIngenieria from '../assets/app-screenshot.jpg';
-import areaAgricultura from '../assets/app-screenshot.jpg';
-import areaSalud from '../assets/app-screenshot.jpg';
 import Navbar from './Navbar';
 import AreasConocimiento from './AreaConocimiento';
 
@@ -43,48 +37,7 @@ export default function LandingPage() {
 
   // Datos de las áreas de conocimiento
   const areas = [
-    {
-      id: 1,
-      title: "Educación",
-      image: areaEducacion,
-      description: "Herramientas para formación docente y aprendizaje continuo.",
-      icon: "fas fa-graduation-cap"
-    },
-    {
-      id: 2,
-      title: "Humanidades y Artes",
-      image: areaHumanidades,
-      description: "Exploración de cultura, filosofía, lenguas y expresiones artísticas.",
-      icon: "fas fa-paint-brush"
-    },
-    {
-      id: 3,
-      title: "Ciencias Económicas y Jurídicas",
-      image: areaEconomicas,
-      description: "Conocimientos sobre economía, derecho y desarrollo comunitario.",
-      icon: "fas fa-balance-scale"
-    },
-    {
-      id: 4,
-      title: "Ingeniería e Industria",
-      image: areaIngenieria,
-      description: "Tecnologías para desarrollo industrial sostenible.",
-      icon: "fas fa-cogs"
-    },
-    {
-      id: 5,
-      title: "Agricultura",
-      image: areaAgricultura,
-      description: "Técnicas agropecuarias para el desarrollo rural.",
-      icon: "fas fa-tractor"
-    },
-    {
-      id: 6,
-      title: "Salud y Servicios Sociales",
-      image: areaSalud,
-      description: "Promoción de la salud y bienestar comunitario.",
-      icon: "fas fa-heartbeat"
-    }
+
   ];
 
   // Características principales
@@ -154,7 +107,7 @@ export default function LandingPage() {
       {/* Áreas de Conocimiento */}
      <AreasConocimiento />
       {/* Features Section */}
-      <section className="features-section" id="features">
+      {/* <section className="features-section" id="features">
         <div className="container">
           <div className="section-header">
             <h2>Características Principales</h2>
@@ -172,7 +125,7 @@ export default function LandingPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Contact Section */}
       <section className="contact-section" id="contact">
