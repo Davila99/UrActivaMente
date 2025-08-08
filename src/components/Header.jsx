@@ -7,8 +7,8 @@ import 'swiper/css/pagination';
 
 // Importa tus imágenes
 import logo from '../assets/app-screenshot.jpg';
-import heroImage from '../assets/app-screenshot.jpg';
-import appScreenshot from '../assets/app-screenshot.jpg';
+import heroImage from '../assets/fondo.jpg';
+import appScreenshot from '../assets/fondo3.jpg';
 import areaEducacion from '../assets/app-screenshot.jpg';
 import areaHumanidades from '../assets/app-screenshot.jpg';
 import areaEconomicas from '../assets/app-screenshot.jpg';
@@ -19,6 +19,7 @@ import testimonial1 from '../assets/app-screenshot.jpg';
 import testimonial2 from '../assets/app-screenshot.jpg';
 import testimonial3 from '../assets/app-screenshot.jpg';
 import Navbar from './Navbar';
+import AreasConocimiento from './AreaConocimiento';
 
 export default function LandingPage() {
   useEffect(() => {
@@ -175,65 +176,7 @@ export default function LandingPage() {
       </section>
 
       {/* Áreas de Conocimiento */}
-      <section className="areas-section" id="areas">
-        <div className="container">
-          <div className="section-header">
-            <h2>Áreas de Conocimiento</h2>
-            <p>Explora las diferentes disciplinas que integra nuestra plataforma</p>
-          </div>
-          <div className="areas-grid">
-            {areas.map(area => (
-              <div className="area-card" key={area.id}>
-                <div className="area-icon">
-                  <i className={area.icon}></i>
-                </div>
-                <div className="area-image">
-                  <img src={area.image} alt={area.title} />
-                </div>
-                <div className="area-content">
-                  <h3>{area.title}</h3>
-                  <p>{area.description}</p>
-                  <a href="#" className="btn-learn-more">Saber más</a>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* About Section */}
-      <section className="about-section" id="about">
-        <div className="container">
-          <div className="about-content">
-            <div className="about-image">
-              <img src={appScreenshot} alt="UrActivaMente" />
-            </div>
-            <div className="about-text">
-              <h2>¿Qué es UrActivaMente?</h2>
-              <p className="lead">Una aplicación integradora diseñada en URACCAN</p>
-              <p>UrActivaMente es una herramienta didáctica innovadora que reúne conocimientos de todas las áreas académicas, diseñada y asesorada por docentes y especialistas de cada disciplina. Nuestra aplicación promueve el aprendizaje activo mediante recursos interactivos, contenidos actualizados y metodologías pedagógicas modernas.</p>
-              <div className="about-features">
-                <div className="feature-item">
-                  <i className="fas fa-check-circle"></i>
-                  <span>Contenidos validados por expertos</span>
-                </div>
-                <div className="feature-item">
-                  <i className="fas fa-check-circle"></i>
-                  <span>Enfoque multicultural</span>
-                </div>
-                <div className="feature-item">
-                  <i className="fas fa-check-circle"></i>
-                  <span>Acceso desde cualquier dispositivo</span>
-                </div>
-              </div>
-              <button className="btn-watch-video">
-                <i className="fas fa-play"></i> Ver video explicativo
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
+     <AreasConocimiento />
       {/* Features Section */}
       <section className="features-section" id="features">
         <div className="container">
